@@ -11,9 +11,16 @@
 function calculateTotalSpentByCategory(transactions) {
   let cat = []
   transactions.map((transaction, i) => {
-    
+    cat.push({
+      category: `${transaction.category}`,
+      price: `${transaction.price}`
+    })
   })
-  console.log(cat)
+  cat.reduce((c,i)=>{
+    console.log(c);
+    return c;
+  })
+  // console.log(cat)
 
 }
 

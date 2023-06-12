@@ -9,7 +9,41 @@
 */
 
 function calculateTotalSpentByCategory(transactions) {
-  return [];
+  let cat = []
+  transactions.map((transaction, i) => {
+    
+  })
+  console.log(cat)
+
 }
+
+let transactions = [
+  {
+    itemName: "Dairy Milk",
+    category: "Choclate",
+    price: 100,
+    timestamp: Date.now()
+  },
+  {
+    itemName: "Fresh Milk",
+    category: "Milk",
+    price: 60,
+    timestamp: Date.now()
+  },
+  {
+    itemName: "Laptpop",
+    category: "Electronics",
+    price: 50000,
+    timestamp: Date.now()
+  },
+  {
+    itemName: "Samsung s23",
+    category: "Electronics",
+    price: 90000,
+    timestamp: Date.now()
+  },
+]
+
+calculateTotalSpentByCategory(transactions)
 
 module.exports = calculateTotalSpentByCategory;
